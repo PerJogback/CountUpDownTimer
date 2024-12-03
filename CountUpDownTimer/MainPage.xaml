@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:layouts="clr-namespace:CountUpDownTimer.Layouts"
+             x:Class="CountUpDownTimer.MainPage">
+
+    <ScrollView>
+        <StackLayout x:Name="mainStackLayout" 
+            Orientation="Vertical">
+            <StackLayout x:Name="buttonsStackLayout"
+                Orientation="Horizontal"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="FillAndExpand">
+                <Button Text="+"
+                    VerticalOptions="Center"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="PlusButtonClicked"
+                    Margin="2"/>
+                <Button Text="-"
+                    VerticalOptions="Center"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="MinusButtonClicked"
+                    Margin="2"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
